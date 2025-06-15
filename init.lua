@@ -93,8 +93,6 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
-vim.g.termguicolors = true
-
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
@@ -1017,6 +1015,8 @@ require('lazy').setup({
 })
 
 vim.cmd.colorscheme 'catppuccin'
+vim.opt.termguicolors = true
+require('bufferline').setup {}
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
